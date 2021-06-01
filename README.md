@@ -12,6 +12,9 @@ security and linux instances configurations. The setup of environment is deployi
 and subnets and balancing the HTTP requests from clients through Classic Load Balancer also known as Elastic Load Balancer. Seperate security groups are configured to
 Linux instances and ELB to let the instances accessed by the clients only through ELB.
 
+*****IMPORTANT***** 
+If you are trying this for testing or education purposes, make sure to destroy the deployments after the deployments. Other wise it will cost you $.
+
 Useful commands for this Terraform files
 
 / terraform init / - This command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new
@@ -23,6 +26,7 @@ Useful commands for this Terraform files
                      *  Proposing a set of change actions that should, if applied, make the remote objects match the configuration.
                      
 / terraform plan / - This command executes the actions proposed in a Terraform plan.
+
 
 Useful links:   [Terraform Documentations](https://www.terraform.io/docs/)
                 [AWS Documnetations](https://docs.aws.amazon.com)
