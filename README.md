@@ -7,10 +7,7 @@
 # Terraform_AWS_Elastic_Load_Balancer_basics
 Configuring Elastic Load Balancer for web servers through Terraform infrastructure as code. 
 
-This repository contains the files to setup and configure Load balancing environment in Amazon Web Services. Terraform HCL is used to automate the processes of network, 
-security and linux instances configurations. The setup of environment is deploying 2 apache2 webservers on Amazon_Linux and Ubuntu t2.micro type instances with custom VPC
-and subnets and balancing the HTTP requests from clients through Classic Load Balancer also known as Elastic Load Balancer. Seperate security groups are configured to
-Linux instances and ELB to let the instances accessed by the clients only through ELB.
+This repository contains the files to setup and configure Load balancing environment in Amazon Web Services. Terraform HCL is used to automate the processes of creating and deploying network, security and linux instances configurations. The setup of this environment is deploying two apache2 webservers on Amazon_Linux and Ubuntu t2.micro type instances with custom VPC and subnets and balancing the HTTP requests from clients through Classic Load Balancer also known as Elastic Load Balancer. Seperate security groups are configured to Linux instances and ELB to let the instances not to expose directly to public and let the clients access through configured ELB only.
 
 *****IMPORTANT***** 
 If you are trying this for testing or education purposes, make sure to destroy the deployments after the deployments. Other wise it will cost you $.
