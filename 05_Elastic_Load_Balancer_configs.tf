@@ -37,3 +37,8 @@ resource "aws_elb" "my-elb" {
         Name = "my-elb"
     }
 }
+
+#Terraform console output
+output "Load_Balancer_DNS" {
+    value = aws_elb.my-elb.dns_name
+}

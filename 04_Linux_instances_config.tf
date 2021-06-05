@@ -33,6 +33,12 @@ resource "aws_instance" "myFirst_TF-server" {
   }
 }
 
+
+#Terraform console output
+output "AmazonLinux_availability_zone" {
+  value = aws_instance.myFirst_TF-server.availability_zone
+}
+
 #Install and configure Apache web server on Ubuntu
 #Deployed on /us-east-1b/
 resource "aws_instance" "mySecond_TF-server" {
@@ -56,4 +62,9 @@ resource "aws_instance" "mySecond_TF-server" {
   tags = {
     Name = "TF_Ubuntu_web"
   }
+}
+
+#Terraform console output
+output "Ubuntu_availability_zone" {
+  value = aws_instance.mySecond_TF-server.availability_zone
 }
